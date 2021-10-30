@@ -1,0 +1,221 @@
+
+   
+
+      body{
+          animation: fadein 3000ms ease-out;
+          -moz-animation: fadein 3000ms ease-out; /* Firefox */
+          -webkit-animation: fadein 3000ms ease-out; /* Safari and  Chrome */
+          -o-animation: fadein 3000ms ease-out; /* Opera */
+          overflow: hidden;
+          touch-action: none;
+          
+      }
+
+
+      @keyframes fadein {
+          from {opacity:0;}
+          to {opacity:1;}
+      }
+      @-moz-keyframes fadein { /* Firefox */
+          from {opacity:0;}
+          to {opacity:1;}
+      }
+      @-webkit-keyframes fadein { /* Safari and Chrome */
+          from {opacity:0;}
+          to {opacity:1;}
+      }
+      @-o-keyframes fadein { /* Opera */
+          from {opacity:0;}
+          to {opacity: 1;}
+      }
+
+
+        textarea:focus {
+        outline: none;
+        }
+        button:focus {
+        outline: none;
+        }
+        input:focus {
+        outline: none;
+        }
+
+        a:focus {
+        outline: none;
+        -webkit-tap-highlight-color : rgba(0,0,0,0);
+        }
+
+        p:focus {
+        outline: none;
+        -webkit-tap-highlight-color : rgba(0,0,0,0);
+        }
+
+
+
+
+
+          body {
+          background-image: url('bg@3x.png');
+          background-position: center center;
+          background-repeat:  no-repeat;
+          background-attachment: fixed;
+          background-size:  cover;
+          font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+        }
+
+         
+
+        
+        .p {
+
+            background-color: rgb(255, 255, 255);
+            font-size: 12px;
+            text-align: center;
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+          
+        
+        
+        }
+
+        button.firstBtn:focus{ 	
+            border: none;
+            outline:none;
+            }
+  
+        .h3 {
+
+            background-color: rgb(255, 255, 255);
+            font-size: 34px;
+            font-weight: bold;
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+        
+        
+        }
+
+        .select {
+            text-align-last: center;
+            text-align: center;
+            -ms-text-align-last: center;
+            -moz-text-align-last: center;
+            text-align-last: center;
+            vertical-align:middle;
+          
+        
+        
+         }
+
+         .modal-content {
+          
+            height: 200px;
+            width: 340px;
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            border-radius: 20px;  
+            font-family: 'Noto Sans KR', sans-serif;
+
+        }
+
+        .ticket_main {
+
+
+          height: 500px; 
+          width:350px; 
+          margin-top: 70px;
+          margin:0 auto; 
+          border-radius: 10px;
+          background-color: rgba(181,181,181,0.3);
+
+        }
+          .marquee {
+            height: 25px;
+            width: 420px;
+          
+            overflow: hidden;
+            position: relative;
+          }
+          
+          .marquee div {
+            display: block;
+            width: 200%;
+            height: 30px;
+          
+            position: absolute;
+            overflow: hidden;
+          
+            animation: marquee 5s linear infinite;
+          }
+          
+          .marquee span {
+            float: left;
+            width: 50%;
+          }
+          
+          @keyframes marquee {
+            0% { left: 0; }
+            100% { left: -100%; }
+          }
+
+
+        
+
+        .modal {
+            display: none; /* 모달 발생시, 배경화면 관련 태그 들 */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,8); /* Black w/ opacity */
+        }
+
+        .now_logo.blue {
+
+            width: 10px;
+            height: 10px;
+            background: #002BFF;
+            border-radius: 50%;
+            position:absolute;
+            margin-left: 1px;
+            box-shadow: #002BFF;
+            animation: pulse-blue 2s infinite;
+          }
+          
+          @keyframes pulse-blue {
+            0% {
+              transform: scale(0.95);
+              box-shadow: 0 0 0 0 rgba(52, 172, 224, 0.7);
+            }
+            
+            70% {
+              transform: scale(1);
+              box-shadow: 0 0 0 10px rgba(52, 172, 224, 0);
+            }
+            
+            100% {
+              transform: scale(0.95);
+              box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
+            }
+          }
+
+
+          ::-webkit-scrollbar {
+
+      display:none;
+
+        }
+
+
+        * { font-family: 'Spoqa Han Sans', 'Sans-serif'; 
+        
+        }
+
+        @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+
+
+      
